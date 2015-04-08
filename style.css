@@ -1,0 +1,146 @@
+h1 {
+	font-size: 220%;
+	text-align: center;
+	position: relative;
+  	top: 50%;
+}
+h2 {
+	font-size: 200%;
+}
+h3 {
+	font-size: 180%;
+}
+h4 {
+	font-size: 160%;
+}
+h5{
+	font-size: 140%;
+}
+h6 {
+	font-size: 120%;
+}
+
+p {
+    font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+}
+
+a {
+	font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+a:link{
+	color: #FFFFFF;
+}
+
+a:visited{
+	color: #FFFFFF;
+}
+
+a:hover{
+	color: #FFFFFF;
+}
+
+a:active{
+	color: #999999;
+}
+
+body {
+	font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	background-color: #000000;
+	text-align: center;
+	margin: 0px;
+  	padding: 0px;
+    width: 100%;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+.floatbox h1{
+	text-align: center;
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	z-index: auto;
+  	width: 10%;
+  	text-shadow: 2px 2px #FFFFFF;
+}
+
+.siteframes{
+	height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#window1.floatbox h1 {left: 10%;}
+#window2.floatbox h1 {left: 20%;}
+#window3.floatbox h1 {left: 30%;}
+#window4.floatbox h1 {left: 40%;}
+#window5.floatbox h1 {left: 50%;}
+#window6.floatbox h1 {left: 60%;}
+#window7.floatbox h1 {left: 70%;}
+#window8.floatbox h1 {left: 80%;}
+
+#window1 { background: url("images/main/01.jpg") no-repeat center fixed; z-index: 8;}
+#window2 { background: url("images/main/02.jpg") no-repeat center fixed; z-index: 7;}
+#window3 { background: url("images/main/03.jpg") no-repeat center fixed; z-index: 6;}
+#window4 { background: url("images/main/04.jpg") no-repeat center fixed; z-index: 5;}
+#window5 { background: url("images/main/05.jpg") no-repeat center fixed; z-index: 4;}
+#window6 { background: url("images/main/06.jpg") no-repeat center fixed; z-index: 3;}
+#window7 { background: url("images/main/07.jpg") no-repeat center fixed; z-index: 2;}
+#window8 { background: url("images/main/08.jpg") no-repeat center fixed; z-index: 1;}
+
+
+
+#lastwindow{
+	height: 100vh;
+    width: 100vw;
+    background: url("images/main/background.jpg") no-repeat center fixed;
+    position: relative;
+    z-index: 10;
+}
+
+#lastwindow ul li {
+	list-style: none;
+}
+
+hr {
+	margin: 0.5em 0em 0.5em 0em ;
+	padding: 0em;
+
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline;
+}
+
+nav a {
+	padding: 0em 1em 0em 1em;
+}
+
+
+#facebook, #instagram, #twitter {
+	color: #FFFFFF;
+	font-size: 2em;
+	width:6em;
+	margin: 0em;
+	padding: 0em;
+}
+
+#facebook:hover span, #instagram:hover span, #twitter:hover span {display:none}
+#facebook:hover:before {content:"facebook"}
+#instagram:hover:before {content:"instagram"}
+#twitter:hover:before {content:"twitter"}
+
+
+
