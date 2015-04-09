@@ -1,8 +1,5 @@
 h1 {
 	font-size: 220%;
-	text-align: center;
-	position: relative;
-  	top: 50%;
 }
 h2 {
 	font-size: 200%;
@@ -30,11 +27,11 @@ a {
 }
 
 a:link{
-	color: #FFFFFF;
+	color: #000000;
 }
 
 a:visited{
-	color: #FFFFFF;
+	color: #000000;
 }
 
 a:hover{
@@ -60,12 +57,12 @@ body {
   margin-left: 0px;
 }
 
+@media only screen and (min-width: 480px) {
 
 .floatbox h1{
 	text-align: center;
 	position: fixed;
   	top: 50%;
-  	left: 50%;
   	z-index: auto;
   	width: 10%;
   	text-shadow: 2px 2px #FFFFFF;
@@ -86,6 +83,40 @@ body {
 #window7.floatbox h1 {left: 70%;}
 #window8.floatbox h1 {left: 80%;}
 
+}
+
+@media only screen and (max-width: 480px) {
+
+	.floatbox h1{
+		color: #000000;
+		text-align: center;
+		position: fixed;
+		left: 0%;
+	  	z-index: auto;
+	  	width: 10%;
+	  	text-shadow: 2px 2px #FFFFFF;
+
+	}
+
+	.siteframes{
+		height: 100vh;
+	    width: 100vw;
+	    position: relative;
+	}
+
+	#window1.floatbox h1 {top: 10%; left: 5%;}
+	#window2.floatbox h1 {top: 20%; left: 15%;}
+	#window3.floatbox h1 {top: 30%; left: 25%;}
+	#window4.floatbox h1 {top: 40%; left: 35%;}
+	#window5.floatbox h1 {top: 50%; left: 45%;}
+	#window6.floatbox h1 {top: 60%; left: 55%;}
+	#window7.floatbox h1 {top: 70%; left: 65%;}
+	#window8.floatbox h1 {top: 80%; left: 75%;}
+
+}
+
+
+
 #window1 { background: url("images/main/01.jpg") no-repeat center fixed; z-index: 8;}
 #window2 { background: url("images/main/02.jpg") no-repeat center fixed; z-index: 7;}
 #window3 { background: url("images/main/03.jpg") no-repeat center fixed; z-index: 6;}
@@ -96,17 +127,19 @@ body {
 #window8 { background: url("images/main/08.jpg") no-repeat center fixed; z-index: 1;}
 
 
-
 #lastwindow{
 	height: 100vh;
     width: 100vw;
     background: url("images/main/background.jpg") no-repeat center fixed;
     position: relative;
     z-index: 10;
+    text-align: center;
 }
 
 #lastwindow ul li {
+	text-align: center;
 	list-style: none;
+	display: block;
 }
 
 hr {
@@ -115,32 +148,34 @@ hr {
 
 }
 
-nav {
-	width: 100%;
+#bcholder {
+	padding-top: 10vh;
+    position: relative;
+    width: 400px;
+    height: 400px;
 }
 
-nav ul li {
-	list-style: none;
-	display: inline;
-}
-
-nav a {
-	padding: 0em 1em 0em 1em;
+#bandcamp {
+	border: 0; 
+	width: 100%; 
+	height: 100%;
+	position: absolute;
+    left: 0;
 }
 
 
 #facebook, #instagram, #twitter {
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 2em;
 	width:6em;
 	margin: 0em;
 	padding: 0em;
+	text-shadow: 2px 2px #FFFFFF;
 }
 
 #facebook:hover span, #instagram:hover span, #twitter:hover span {display:none}
 #facebook:hover:before {content:"facebook"}
 #instagram:hover:before {content:"instagram"}
 #twitter:hover:before {content:"twitter"}
-
 
 
