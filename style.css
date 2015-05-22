@@ -27,7 +27,7 @@ a {
 }
 
 a:link{
-	color: #000000;
+	color: #3D3D3D;
 }
 
 a:visited{
@@ -45,6 +45,7 @@ a:active{
 body {
 	font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
 	font-weight: bold;
+	color: #3D3D3D;
 	background-color: #000000;
 	text-align: center;
 	margin: 0px;
@@ -52,11 +53,12 @@ body {
     width: 100%;
 }
 
-.row {
+.main {
   margin-right: 0px;
   margin-left: 0px;
 }
 
+/*non-mobile*/
 @media only screen and (min-width: 480px) {
 
 .floatbox h1{
@@ -85,6 +87,7 @@ body {
 
 }
 
+/* mobile */
 @media only screen and (max-width: 480px) {
 
 	.floatbox h1{
@@ -98,11 +101,15 @@ body {
 
 	}
 
+	
 	.siteframes{
 		height: 100vh;
 	    width: 100vw;
 	    position: relative;
+	    background-size:cover;
 	}
+	
+
 
 	#window1.floatbox h1 {top: 10%; left: 5%;}
 	#window2.floatbox h1 {top: 20%; left: 15%;}
@@ -117,20 +124,20 @@ body {
 
 
 
-#window1 { background: url("images/main/01.jpg") no-repeat center fixed; z-index: 8;}
-#window2 { background: url("images/main/02.jpg") no-repeat center fixed; z-index: 7;}
-#window3 { background: url("images/main/03.jpg") no-repeat center fixed; z-index: 6;}
-#window4 { background: url("images/main/04.jpg") no-repeat center fixed; z-index: 5;}
-#window5 { background: url("images/main/05.jpg") no-repeat center fixed; z-index: 4;}
-#window6 { background: url("images/main/06.jpg") no-repeat center fixed; z-index: 3;}
-#window7 { background: url("images/main/07.jpg") no-repeat center fixed; z-index: 2;}
-#window8 { background: url("images/main/08.jpg") no-repeat center fixed; z-index: 1;}
+#window1 { background: url("images/main/01.JPG") no-repeat center fixed; z-index: 8;}
+#window2 { background: url("images/main/02.JPG") no-repeat center fixed; z-index: 7;}
+#window3 { background: url("images/main/03.JPG") no-repeat center fixed; z-index: 6;}
+#window4 { background: url("images/main/04.JPG") no-repeat center fixed; z-index: 5;}
+#window5 { background: url("images/main/05.JPG") no-repeat center fixed; z-index: 4;}
+#window6 { background: url("images/main/06.JPG") no-repeat center fixed; z-index: 3;}
+#window7 { background: url("images/main/07.JPG") no-repeat center fixed; z-index: 2;}
+#window8 { background: url("images/main/08.JPG") no-repeat center fixed; z-index: 1;}
 
 
 #lastwindow{
 	height: 100vh;
     width: 100vw;
-    background: url("images/main/background.jpg") no-repeat center fixed;
+    background: url("images/main/background.JPG") no-repeat center fixed;
     position: relative;
     z-index: 10;
     text-align: center;

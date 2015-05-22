@@ -21,14 +21,22 @@
 
     ga('create', 'UA-63245801-1', 'auto');
     ga('send', 'pageview');
+  </script>
 
+
+  <script type="text/javascript" src="iscroll.js"></script>
+  <script type="text/javascript">
+  var myScroll;
+  function loaded() {
+      myScroll = new IScroll('#wrapper');
+  }
   </script>
 
 
   </head>
 
-  <body class="main">
-
+  <body class="main" onload="loaded()">
+  <div id="wrapper">
     <div id="window1" class="floatbox siteframes">
       <h1>filling</h1>
     </div>
@@ -73,6 +81,7 @@
     </ul>
     </center>
   	</div>
+    </div>
 
 
 
