@@ -51,15 +51,9 @@ body {
 	margin: 0px;
   	padding: 0px;
     width: 100%;
+    margin-right: 0px;
+  	margin-left: 0px;
 }
-
-.main {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-/*non-mobile*/
-@media only screen and (min-width: 480px) {
 
 .floatbox h1{
 	text-align: center;
@@ -84,44 +78,6 @@ body {
 #window6.floatbox h1 {left: 60%;}
 #window7.floatbox h1 {left: 70%;}
 #window8.floatbox h1 {left: 80%;}
-
-}
-
-/* mobile */
-@media only screen and (max-width: 480px) {
-
-	.floatbox h1{
-		color: #000000;
-		text-align: center;
-		position: fixed;
-		left: 0%;
-	  	z-index: auto;
-	  	width: 10%;
-	  	text-shadow: 2px 2px #FFFFFF;
-
-	}
-
-	
-	.siteframes{
-		height: 100vh;
-	    width: 100vw;
-	    position: relative;
-	    background-size:cover;
-	}
-	
-
-
-	#window1.floatbox h1 {top: 10%; left: 5%;}
-	#window2.floatbox h1 {top: 20%; left: 15%;}
-	#window3.floatbox h1 {top: 30%; left: 25%;}
-	#window4.floatbox h1 {top: 40%; left: 35%;}
-	#window5.floatbox h1 {top: 50%; left: 45%;}
-	#window6.floatbox h1 {top: 60%; left: 55%;}
-	#window7.floatbox h1 {top: 70%; left: 65%;}
-	#window8.floatbox h1 {top: 80%; left: 75%;}
-
-}
-
 
 
 #window1 { background: url("images/main/01.JPG") no-repeat center fixed; z-index: 8;}
@@ -180,9 +136,75 @@ hr {
 	text-shadow: 2px 2px #FFFFFF;
 }
 
+
+.links {
+	color: #000000;
+	font-size: 2em;
+	width:6em;
+	margin: 0em;
+	padding: 0em;
+	text-shadow: 2px 2px #FFFFFF;
+}
+
+
 #facebook:hover span, #instagram:hover span, #twitter:hover span {display:none}
 #facebook:hover:before {content:"facebook"}
 #instagram:hover:before {content:"instagram"}
 #twitter:hover:before {content:"twitter"}
+
+/*non-mobile*/
+@media only screen and (min-width: 1000px) {
+
+#mobile {display: none;}
+
+}
+
+/* mobile */
+@media only screen and (max-width: 1000px) {
+
+	#computer {display: none;}
+	/*#window1, #window2, #window3, #window4, #window5, #window6, #window7, #window8, #lastwindow {display: none;}*/
+
+	#mobile {
+		background: url("images/main/01.JPG");
+		background-size:cover;
+		color: #3D3D3D;
+		text-align: center;
+	  	text-shadow: 2px 2px #FFFFFF;
+	}
+
+	ul li {
+		text-align: center;
+		list-style: none;
+		display: block;
+	}
+
+	#bcholder {
+		padding-top: 1vh;
+	    position: relative;
+	    width: 100vw;
+	    height: 400px;
+	}
+
+	#bandcamp {
+		border: 0; 
+		width: 100vw; 
+		height: 100%;
+		position: absolute;
+	    left: 0;
+	}
+
+	/* scrapped parallax code
+		#window1.floatbox h1 {top: 10%; left: 5%;}
+		#window2.floatbox h1 {top: 20%; left: 15%;}
+		#window3.floatbox h1 {top: 30%; left: 25%;}
+		#window4.floatbox h1 {top: 40%; left: 35%;}
+		#window5.floatbox h1 {top: 50%; left: 45%;}
+		#window6.floatbox h1 {top: 60%; left: 55%;}
+		#window7.floatbox h1 {top: 70%; left: 65%;}
+		#window8.floatbox h1 {top: 80%; left: 75%;}
+	*/
+
+}
 
 
